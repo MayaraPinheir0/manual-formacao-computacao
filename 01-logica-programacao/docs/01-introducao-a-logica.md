@@ -78,6 +78,3 @@ A convergência do pensamento humano para métodos estruturados de resolução d
 * FORBELLONE, André Luiz Villar; EBERSPACHER, Henri Frederico. **Lógica de Programação**: a construção de algoritmos e estruturas de dados. 4. ed. São Paulo: Bookman, 2022.
 * GLOSSARY of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Glossary_of_logic&oldid=1255864119>. Acesso em: 2 jun. 2026.
 * OUTLINE of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Outline_of_logic&oldid=1255864115>. Acesso em: 2 jun. 2026.
-
-
-# Exercicio

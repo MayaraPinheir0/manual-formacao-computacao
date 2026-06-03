@@ -1,74 +1,69 @@
-data: 02 jun 2026
+data: 03 jun 2026
 
-# Introdução à Lógica Teórica e Computacional
 
-Este repositório destina-se ao registro, estruturação e divulgação de estudos fundamentais em Lógica, servindo como base conceitual para o desenvolvimento de habilidades em Lógica de Programação e Ciência da Computação.
+# Exercicios
+## 1. 
+### um homem precisa atravessar um rio com um barco que possui capacidade somente para carregar ele mesmo e mais uma de suas três cargas, que são um lobo, uma cabra e um repolho. O que o homem deve fazer para conseguir atravessar o rio sem perder suas cargas? 
 
----
+primeiro definir as condicoes do problema que nao estao explicitas, 
 
-## 1. Fundamentos da Lógica
+* delimitar o problema:
+o lobo nao pode ficar sozinho com o bode,
+o bode nao pode ficar sozinho com o repolho.
+atravessa-se só dois no barco.
 
-### 1.1 O Conceito de Lógica: Correção e Ordenação do Pensamento
+* definicoes:
+atravessar o rio - sair de A ao B
 
-De acordo com Forbellone e Eberspacher (2022), a lógica pode ser definida como a ciência da "correção do pensamento". Seu foco reside em determinar quais operações intelectuais são válidas ou inválidas por meio da análise rigorosa das formas e das leis que regem o pensamento. 
+Nesse sentido, a sequencia seria:
 
-* **Reflexão Crítica e Epistemológica:** Expandindo a visão clássica dos autores, a lógica atua não apenas como um corretor passivo, mas como um instrumental normativo e metodológico. Ela fornece o arcabouço estrutural que valida e orienta a transição legítima entre proposições, garantindo que as conclusões ou suposições inferidas sejam formalmente consistentes.
-* **Lacuna Metodológica:** Embora a literatura tradicional enfatize o uso da lógica para a correta aplicação das "leis do pensamento", frequentemente há uma omissão ontológica quanto à definição e à origem dessas próprias leis (sejam elas axiomáticas, biológicas ou construídas socialmente).
-* **Definição Expandida:** Em termos contemporâneos, a Lógica constitui um ramo interdisciplinar da ciência que investiga, classifica e formaliza as estruturas de enunciados e argumentos. Sua finalidade precípua é identificar e isolar critérios normativos para discernir inferências válidas (corretas) de falácias ou paradoxos (incorretas) (OUTLINE..., 2026).
+**\ Algoritmo Travessia_Lobo_Bode_Repolho \**
 
-Para auxiliar na navegação dos conceitos e na terminologia clássica frequentemente catalogada em verbetes e glossários de lógica, adota-se a taxonomia formal de argumentos (GLOSSARY OF LOGIC, 2026):
 
-<p align="center">
-  <img src="./imagens/img1-argument_terminology.png" alt="Terminologia Clássica de Argumentos" width="450">
-  <br>
-  <em>Figura 1: Terminologia clássica de argumentos e estruturas lógicas.</em>
-</p>
+o homem vai pegar o bode:
+  coloca no barco:
+  
+    no barco:
+      sair do ponto A ao B:
+      deixar o bode no ponto B do rio,
+      voltar ao ponto A
 
----
+_situacao 1: o lobo e repolho estao do lado A, e o bode do lado B_
 
-## 2. Análise Estrutural de Argumentos: O Silogismo Clássico
+o homem vai pegar o repolho:
+  coloca no barco,
+  
+    no barco:
+      sair de A, chegar ao B:
+        trocar:
+          deixa o repolho no lado B,
+          pegar o bode, 
+          colocar no barco,
+          e volta ao A.
 
-Considere o seguinte exemplo clássico de silogismo categórico:
+_situacao 2: agora, o repolho está no lado B, o bode com o homem, e o lobo no lado A._
 
-> *Todo mamífero é um animal.*
-> *Todo cavalo é um mamífero.*
-> *Portanto, todo cavalo é um animal.*
+o homem vai deixar o bode:
+pegar o lobo:
+  colocar no barco,
 
-Este argumento pode ser formalizado e interpretado sob múltiplos prismas metodológicos:
+    no barco:
+      sair de A, chegar a B:
+        trocar:
+          deixa o lobo no lado B,
+          e volta ao A.
 
-### Abordagem 1: Dedução Formal e Transitividade Proposicional
-Podemos mapear as proposições atribuindo variáveis às classes:
-* $A$ : Mamífero
-* $B$ : Animal
-* $C$ : Cavalo
+_situacao 3: tem-se, a condicao da situacao 1, mas no lado diferente do começo. o lobo e repolho do lado B, e o bode do lado A._
 
-A estrutura lógica baseia-se na propriedade da **transitividade da implicação** (ou inclusão de conjuntos):
-$$	ext{Se } C \subset A \quad 	ext{e } \quad A \subset B, \quad 	ext{logo } \quad C \subset B$$
+o homem vai pegar o bode:
+  colocar no barco,
+    no barco:
+      sair de A, chegar a B:
+      Fim
+    
 
-*Nota de correção técnica:* Na formulação estritamente matemática, expressa-se via inclusão de conjuntos ou implicação lógica ($
-ightarrow$), e não por igualdade mecânica ($C = B$), visto que o Cavalo ($C$) está contido no conjunto dos Animais ($B$), mas não o exaure.
+pergunta: será que o algoritimo so funciona, no sentido mais amplo, ligado a sua existencia mesmo, porque consiguimos analisar os passos que nao estao sendo relatando enquanto esta sendo resolvido, o problema?
 
-### Abordagem 2: Abstração Computacional (Especialização e Generalização)
-Sob a ótica da Ciência da Informação e da Programação Orientada a Objetos (POO):
-* **Animal** representa a classe mais genérica (pertencente ao Filo no reino biológico).
-* **Mamífero** configura uma subclasse de Animal, herdando seus atributos e métodos (Especialização de Animal).
-* **Cavalo** configura uma subclasse ainda mais específica, contida em Mamífero.
 
-Aqui, o raciocínio lógico é modelado por meio de hierarquias de herança e taxonomia de dados, onde a ontologia mapeia o mundo real em estruturas computacionais.
 
----
-
-## 3. Discussão Filosófica e Cognitiva
-
-A convergência do pensamento humano para métodos estruturados de resolução de problemas levanta questões profundas:
-
-1. **Cognição vs. Estrutura:** Resolvemos problemas cotidianos aplicando lógica formal abstrata ou por meio de mecanismos evolucionários de especialização e generalização? O pensamento humano parece convergir para um método algorítmico, cujas nuances variam conforme o contexto sociocultural e a linguagem.
-2. **Dependência Científica:** A articulação sucessiva e estruturada de ideias exige o respeito estrito às leis da física e da natureza? No campo da lógica computacional e matemática, a resposta é **não**. Somos capazes de criar sistemas axiomáticos inteiramente novos e consistentes modificando as premissas fundamentais (como ocorre nas físicas não-euclidianas ou em lógicas polivalentes e paraconsistentes), permitindo a manipulação e a criação de conhecimentos em realidades puramente abstratas.
-
----
-
-## 4. Referências Bibliográficas
-
-* FORBELLONE, André Luiz Villar; EBERSPACHER, Henri Frederico. **Lógica de Programação**: a construção de algoritmos e estruturas de dados. 4. ed. São Paulo: Bookman, 2022.
-* GLOSSARY of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Glossary_of_logic&oldid=1255864119>. Acesso em: 2 jun. 2026.
-* OUTLINE of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Outline_of_logic&oldid=1255864115>. Acesso em: 2 jun. 2026.
+## 2. três jesuítas e três canibais precisam atravessar um rio; para tal dispõem de um barco com capacidade para duas pessoas. Por medidas de segurança, não se deve permitir que em alguma margem a quantidade de jesuítas seja inferior a de canibais. 
