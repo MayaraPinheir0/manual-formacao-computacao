@@ -10,18 +10,22 @@ Este repositório destina-se ao registro, estruturação e divulgação de estud
 
 ### 1.1 O Conceito de Lógica: Correção e Ordenação do Pensamento
 
-De acordo com Forbellone e Eberspacher (2022), a lógica pode ser definida como a ciência da "correção do pensamento". Seu foco reside em determinar quais operações intelectuais são válidas ou inválidas por meio da análise rigorosa das formas e das leis que regem o pensamento. 
+Forbellone e Eberspacher (2022), abordam a lógica como uma "correçao de pensamento" pois inclina-se em determinar quais operacoes sao validas ou nao, apartir da analise das formas e leis do pensamento.
 
-Expandindo a visão clássica dos autores, a lógica atua não apenas como um corretor passivo, mas como um instrumental normativo e metodológico. Ela fornece o arcabouço estrutural que valida e orienta a transição legítima entre proposições, garantindo que as conclusões ou suposições inferidas sejam formalmente consistentes.
+Expandindo a visão clássica dos autores, a lógica fornece o arcabouço estrutural que valida e orienta a transição legítima entre proposições, garantindo que as conclusões ou suposições inferidas sejam formalmente consistentes.
 
-Embora a literatura enfatize o uso da lógica para a correta aplicação das "leis do pensamento", frequentemente há uma omissão ontológica quanto à definição e à origem dessas próprias leis (sejam elas axiomáticas, biológicas ou construídas socialmente).
+Embora a literatura enfatize o uso da lógica para a correta aplicação das "leis do pensamento", não há explicaçao à definição e à origem dessas próprias leis (sejam elas axiomáticas, biológicas ou construídas socialmente).
+
+_Nota 1:  As leis do pensamento (ou princípios fundamentais da lógica clássica) são os axiomas autoevidentes que estruturam o raciocínio humano coerente. Elas garantem que as afirmações sejam consistentes, evitando ambiguidades e contradições._
+
+_Nota 1: ver pilares fundamentais das leis do pensamentos (Principio da identidade (identifica algo), da nao contradiçao (ou algo é ou nao é) e Princípio do Terceiro Excluído(contradiçao))_
 
 * **Definição Expandida:** Em termos contemporâneos, a Lógica constitui um ramo interdisciplinar da ciência que investiga, classifica e formaliza as estruturas de enunciados e argumentos. Sua finalidade precípua é identificar e isolar critérios normativos para discernir inferências válidas (corretas) de falácias ou paradoxos (incorretas) (OUTLINE..., 2026).
 
 Para auxiliar na navegação dos conceitos e na terminologia clássica frequentemente catalogada em verbetes e glossários de lógica, adota-se a taxonomia formal de argumentos (GLOSSARY OF LOGIC, 2026):
 
 <p align="center">
-  <img src="./imagens/img1-argument_terminology.png" alt="Terminologia Clássica de Argumentos" width="450">
+  <img src="./imagens/img1-argument_terminology.png" alt="Terminologia Clássica de Argumentos" width="200" higth="100">
   <br>
   <em>Figura 1: Terminologia clássica de argumentos e estruturas lógicas.</em>
 </p>
@@ -45,7 +49,7 @@ Podemos mapear as proposições atribuindo variáveis às classes:
 * $C$ : Cavalo
 
 A estrutura lógica baseia-se na propriedade da **transitividade da implicação** (ou inclusão de conjuntos):
-$$	ext{Se } C \subset A \quad 	ext{e } \quad A \subset B, \quad 	ext{logo } \quad C \subset B$$
+$$\text{Se } C \subset A \quad \text{e } \quad A \subset B, \quad \text{logo } \quad C \subset B$$
 
 *Nota de correção técnica:* Na formulação estritamente matemática, expressa-se via inclusão de conjuntos ou implicação lógica ($
 ightarrow$), e não por igualdade mecânica ($C = B$), visto que o Cavalo ($C$) está contido no conjunto dos Animais ($B$), mas não o exaure.
@@ -74,3 +78,6 @@ A convergência do pensamento humano para métodos estruturados de resolução d
 * FORBELLONE, André Luiz Villar; EBERSPACHER, Henri Frederico. **Lógica de Programação**: a construção de algoritmos e estruturas de dados. 4. ed. São Paulo: Bookman, 2022.
 * GLOSSARY of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Glossary_of_logic&oldid=1255864119>. Acesso em: 2 jun. 2026.
 * OUTLINE of logic. In: **WIKIPEDIA**: the free encyclopedia. [San Francisco, CA: Wikimedia Foundation], 2026. Versão estável do artigo. Disponível em: <https://en.wikipedia.org/w/index.php?title=Outline_of_logic&oldid=1255864115>. Acesso em: 2 jun. 2026.
+
+
+# Exercicio
